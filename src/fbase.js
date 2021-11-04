@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import firebase from 'firebase/app'
-import "firebase/database";
+import "firebase/firestore";
 
 const REACT_APP_API_KEY = "AIzaSyA_zPakmYzUPsqxmbRfjVzEW6QS-TWC2N0";
 const REACT_APP_AUTH_DOMAIN = "jjabwitter.firebaseapp.com";
@@ -18,10 +18,12 @@ const firebaseConfig = {
     storageBucket: REACT_APP_STORAGE_BUCKET,
     messagingSenderId:REACT_APP_MESSAGIN_ID,
     appId: REACT_APP_APP_ID,
-    measurementId: REACT_APP_MEASUR_ID
+    measurementId: REACT_APP_MEASUR_ID,
+
   };
 
   firebase.initializeApp(firebaseConfig);
 
   export const firebaseInstance = firebase;
   export const authService = firebase.auth();
+  export const dbService = firebase.firestore();

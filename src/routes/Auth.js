@@ -47,8 +47,8 @@ const Auth = () =>{
         } else if (name === 'github') {
         await authService.signInWithPopup(
         new firebaseInstance.auth.GithubAuthProvider(),
-        );
-        }
+              );
+            }
         };
 
     return( 
