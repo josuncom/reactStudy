@@ -2,6 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import firebase from 'firebase/app'
 import "firebase/firestore";
+import "firebase/storage";
 
 const REACT_APP_API_KEY = "AIzaSyA_zPakmYzUPsqxmbRfjVzEW6QS-TWC2N0";
 const REACT_APP_AUTH_DOMAIN = "jjabwitter.firebaseapp.com";
@@ -27,3 +28,4 @@ const firebaseConfig = {
   export const firebaseInstance = firebase;
   export const authService = firebase.auth();
   export const dbService = firebase.firestore();
+  export const storageService = firebase.storage();

@@ -4,8 +4,6 @@ import App from './component/App';
 import firebase from 'firebase';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <App />,
   document.getElementById('root')
 );
